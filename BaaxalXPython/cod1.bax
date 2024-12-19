@@ -1,0 +1,57 @@
+Káajal:
+    Ts'áa_ti'_pantalla("Iniciando programa de prueba de Ba'axal")
+
+    // Declaración y asignación de variables
+    Ts’áaj(Numero1, 5)
+    Ts’áaj(Numero2, 10)
+    Ts’áaj(Resultado, 0)
+
+    Ts'áa_ti'_pantalla("Variables inicializadas")
+    Ts'áa_ti'_pantalla("Numero1: " + Numero1)
+    Ts'áa_ti'_pantalla("Numero2: " + Numero2)
+
+    // Bucle while con operador lógico
+    Ka'alikil(Numero1 <= Numero2 Yéetel Resultado < 50):
+        Ts’áaj(Resultado, Resultado + Numero1)
+        Ts'áa_ti'_pantalla("Sumando Numero1: " + Numero1 + ", Resultado: " + Resultado)
+        Ts’áaj(Numero1, Numero1 + 1)
+    Ts'o'oksik_le bucle
+
+    Ts'áa_ti'_pantalla("Fin del bucle while")
+    Ts'áa_ti'_pantalla("Resultado final: " + Resultado)
+
+    // Definición de función para calcular el máximo de dos números
+    Fúunsion Maximo(a, b) -> max:
+        Wa_jaaj_lela'(a > b):
+            Ts’áaj(max, a)
+        Ts'o'oksik_le condición
+
+        Ba'ale':
+            Ts’áaj(max, b)
+        Ts'o'oksik_le condición
+    Ts'o'oksik_le función
+
+    // Uso de la función Maximo
+    Ts’áaj(MaxValor, Maximo(7, 14))
+    Ts'áa_ti'_pantalla("El máximo entre 7 y 14 es: " + MaxValor)
+
+    // Bucle for para recorrer una lista de números
+    Ts'áa_ti'_pantalla("Recorriendo lista de números:")
+    Uti'al x Amal [1, 2, 3, 4, 5]:
+        Ts'áa_ti'_pantalla("Número: " + x)
+    Ts'o'oksik_le bucle
+
+    // Entrada de datos y condicional con operadores lógicos
+    Ts'áa_ti'_pantalla("Ingresa un número:")
+    U_yokol(edad)
+Ts’áaj(Entrada,edad)
+    Wa_jaaj_lela'(Entrada > 10 Wa Entrada == 0):
+        Ts'áa_ti'_pantalla("El número es mayor que 10 o igual a 0")
+    Ts'o'oksik_le condición
+
+    Ba'ale':
+        Ts'áa_ti'_pantalla("El número no cumple las condiciones")
+    Ts'o'oksik_le condición
+
+    Ts'áa_ti'_pantalla("Programa finalizado")
+Xuul
